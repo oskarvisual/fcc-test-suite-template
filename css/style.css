@@ -4,8 +4,7 @@ body{
 }
 
 #welcome-section{
-    height: calc(100vh - 103px);
-    padding: 50px 0;
+    height: calc(100vh - 3px);
     background: blue;
     display: flex;
     justify-content: center;
