@@ -1,33 +1,107 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
 #welcome-section{
-    height: 100vh;
-  }
+    height: calc(100vh - 103px);
+    padding: 50px 0;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px #000 solid;
+}
+
+#welcome-section{
+    color: #000;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#proyect-section{
+    padding: 50px 0;
+}
+
+
   
-  .title{
-    font-size: 24px;
-  }
-  
-  #navbar{
+#navbar{
     position: fixed;
     width: 100%;
-    background: rgba(0,0,0,0,8);
-  }
-  
-  .navbar__list{
+    background: rgba(0,0,0,0.8);
+}
+
+.navbar__list{
     list-style: none;
     display: flex;
-  }
-  
-  .navbar__item{
+    justify-content: flex-end;
+}
+
+.navbar__item{
     padding: 5px 10px;
-  }
-  
-  .navbar__link{
+}
+
+.navbar__link{
     color: #fff;
     font-size: 18px;
-  }
+    text-decoration: none;
+}
+
+.navbar__link:hover{
+    text-decoration: underline;
+}
   
-  @media (min-width: 1024px) {
-  .title{
-    font-size: 18px;
-  }
-  }
+@media (min-width: 1024px) {
+    .title{
+        font-size: 18px;
+    }
+}
+
+#projects{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.profile-link{
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    display: block;
+    text-decoration: none;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.7);
+    padding: 200px 10px 5px 10px;
+}
+
+.proyect-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyect-tile{
+    color: #000;
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+.proyect-button{
+    border-radius: 25px;
+    color: #000;
+    border:1px solid #000;
+    transition: 0.25s all ease-in-out;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.proyect-button:hover{
+    color: #fff;
+    background: #000;
+}
